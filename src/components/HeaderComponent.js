@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem, Collapse, NavLink, NavbarToggler } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavItem, Collapse, NavbarToggler } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -16,36 +17,37 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
+
     render() {
         return (
             <React.Fragment>
-                <Navbar className="navbar navbar-expand-md navbar-light sticky-top">
+                <Navbar className="navbar navbar-expand-md navbar-light relative">
                     <NavbarToggler onClick={this.toggleNav} />
-                    <NavbarBrand className="mx-auto d-flex d-md-none" href="#">
+                    <NavbarBrand className="d-block d-md-none" href="#">
                         <img src="/img/FINAL_LOGO.png" width="150" height="150" alt="Five Points Logo" />
                     </NavbarBrand>
                     <Collapse isOpen={this.state.isNavOpen} navbar className="justify-content-around">
                         <Nav navbar className="navbar-nav align-items-center nav-fill w-100">
-                            <NavItem>
-                                <NavLink className="nav-link" to="/home">HOME</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color" to="/home">HOME</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/about">ABOUT</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color" to="/about">ABOUT</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link text-nowrap" to="/event_space">EVENT SPACE</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color text-nowrap" to="/event_space">EVENT SPACE</NavLink>
                             </NavItem>
                             <NavbarBrand className="mx-auto d-none d-md-flex" href="#">
                                 <img src="/img/FINAL_LOGO.png" width="150" height="150" alt="Five Points Logo" />
                             </NavbarBrand>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/menu">MENU</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color" to="/menu">MENU</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/contact">CONTACT</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color" to="/contact">CONTACT</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/press">PRESS</NavLink>
+                            <NavItem className="flex-box">
+                                <NavLink className="nav-link custom-color" to="/press">PRESS</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

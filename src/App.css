@@ -7,16 +7,17 @@ h5 {
 .navbar, .logoRow {
   background-color: #f7fcfe; /* Foam */
 }
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link.custom-color {
   font-family: 'Roboto Condensed: 700', sans-serif;
   color: black;
   /*text-align: center;*/
 }
-.navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link.custom-color:hover {
   text-decoration-line: underline;
   color: black;
+  cursor: pointer;
 }
-.nav-item, .navbar-brand {
+.flex-box, .navbar-brand {
   width: 20%;
   flex-grow: 1;
   flex-basis: 0;
@@ -24,6 +25,10 @@ h5 {
   /*border-style: solid;
   border-width: 2px;
   border-color: black;*/
+}
+.img-fluid {
+  max-width: 100%; 
+  height: auto;
 }
 .values {
   color: black;
@@ -75,6 +80,45 @@ h5 {
   background-repeat: repeat;
   background-size: 25%;
   background-color: black;
+ }
+
+ #IGBar {
+  max-width: 100%; 
+  height: auto;
+  opacity: 1;
+ }
+
+ #IGBar2 {
+  max-width: 100%; 
+  height: auto;
+  opacity: 0.5;
+ }
+
+ #IGLink {
+  font-size: 4rem;
+ }
+ #IGOverlay {
+   display: none;
+ }
+ #IGOverlay2 {
+   display: block;
+ }
+ @media (min-width: 768px) {
+   .noDisplay {
+     display: none;
+   }
+ }
+
+ .site-footer {
+   background-color: black;
+ }
+ .center-text {
+   text-align: center;
+ }
+
+ .submitBtn {
+    background-color: #59656F; 
+    color:snow;
  }
 
 
