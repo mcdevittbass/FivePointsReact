@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { EventCarousel } from './CarouselComponent';
 import FooterSmall from './FooterSmall';
 import { Container, Row, Col, Card, CardHeader, CardBody, Table } from 'reactstrap';

@@ -24,8 +24,10 @@ class EventModal extends Component {
     }
     handleInputChange = (event) => {
         const target = event.target;
-        const value = target.type === 'select' ? target : target.value;
+        const value = target.value;
         const name = target.name;
+
+        //target.type === 'select' ? target : 
     
         this.setState({
           [name]: value
@@ -34,6 +36,7 @@ class EventModal extends Component {
     handleSubmit = (event) => {
         console.log('Current state is: ' + JSON.stringify(this.state));
         alert('Current state is: ' + JSON.stringify(this.state));
+        this.toggleModal();
         event.preventDefault();
     }
 
@@ -45,7 +48,7 @@ class EventModal extends Component {
                         Request More Information
                     </Button>
                 </Col>
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} size={"lg"}>
                     <ModalHeader toggle={this.toggleModal}>Request Event Information</ModalHeader>
                     <ModalBody>
                         <Container className='container-fluid'>
@@ -82,9 +85,9 @@ class EventModal extends Component {
                             </FormGroup>
                             <FormGroup className="row">
                                 <Col>
-                                    <Label class="col-form-label" htmlFor="date">Date of Event</Label>
+                                    <Label className="col-form-label" htmlFor="date">Date of Event</Label>
                                 </Col>
-                                <Col class="col-sm-8 align-items-center">
+                                <Col className="col-sm-8 align-items-center">
                                     <Input type="date" id="date" name="date" placeholder="date" 
                                     value={this.state.date}
                                     onChange={this.handleInputChange}/>
@@ -94,8 +97,8 @@ class EventModal extends Component {
                                 <Col>
                                     <Label className="col-form-label" htmlFor="numGuests">Number of Guests</Label>
                                 </Col>
-                                <Col class="col-sm-8">
-                                    <Input type='select' name="select" id="numGuests" 
+                                <Col className="col-sm-8">
+                                    <Input type='select' name="guests" id="numGuests" 
                                         value={this.state.guests}
                                         onChange={this.handleInputChange}>
                                         <option>select...</option>
@@ -110,13 +113,14 @@ class EventModal extends Component {
                             </FormGroup>
                             <FormGroup className="row">
                                 <Col className="mx-auto">
-                                    <Input type="textarea" id="message" name="textarea" rows="8" placeholder="Tell us about your event"
+                                    <Input type="textarea" id="message" name="message" rows="8" placeholder="Tell us about your event"
                                     value={this.state.message}
-                                    onChange={this.handleInputChange}></Input>
+                                    onChange={this.handleInputChange} />
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Col md={{size: 10, offset: 9}}>
+                                    <Button className='m-1' color="secondary" onClick={this.toggleModal}>Cancel</Button>
                                     <Button type="submit" color="primary">
                                         Submit
                                     </Button>

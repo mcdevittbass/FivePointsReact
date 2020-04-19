@@ -63,12 +63,7 @@ h5 {
   text-decoration-line: underline;
   color: #f7fcfe;
 }
-#carouselButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 900; 
-}
+
 .event_card {
   /*width: 32rem;
   height: 15rem;*/
@@ -137,6 +132,9 @@ h5 {
   height: auto;
   display: block;
 }
-
+#menuButton, #farmButton {
+  border: none;
+  filter: 'invert(1)';
+}
 
 

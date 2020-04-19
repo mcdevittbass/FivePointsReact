@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FooterLarge from './FooterLarge';
 import { Container, Row, Col, Card, CardHeader, CardBody, Form, FormGroup, Input, Button } from 'reactstrap';
 import FooterSmall from './FooterSmall';
 import { AddressCard } from './HomeComponents';
