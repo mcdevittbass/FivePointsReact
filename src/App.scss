@@ -1,0 +1,145 @@
+$Nav-text: 'Roboto Condensed: 700', sans-serif;
+$Address-text: 'Roboto Condensed', sans-serif;
+$Value-text: 'Saira Semi Condensed', sans-serif;
+$background: black; //all dark backgrounds and text over lighter backgrounds
+$Foam: #f7fcfe;
+
+body {
+  background-color: $background;
+}
+h5 {
+  font-family: $Nav-text;
+}
+
+//Classes
+.address {
+  color: $Foam;
+  font-size: medium;
+  opacity: 0.75;
+  font-family: $Address-text;
+}
+.cinnroll {
+  background-image: url(/img/cinnroll.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 25%;
+  background-color: $background;
+ }
+ .contact {
+  color: $Foam;
+}
+.contact:hover {
+  text-decoration-line: underline;
+  color: $Foam;
+}
+.event_card {
+  /*width: 32rem;
+  height: 15rem;*/
+  border-bottom: 0 none;
+}
+.event-photo {
+  max-width: 100%;
+  height: auto;
+  background: $background;
+}
+.flex-box, .navbar-brand {
+  width: 20%;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  /*border-style: solid;
+  border-width: 2px;
+  border-color: black;*/
+}
+.img-fluid {
+  max-width: 100%; 
+  height: auto;
+}
+.navbar, .logoRow {
+  background-color: $Foam;
+}
+.navbar-light .navbar-nav .nav-link.custom-color {
+  font-family: $Nav-text;
+  color: $background;
+  /*text-align: center;*/
+}
+.navbar-light .navbar-nav .nav-link.custom-color:hover {
+  text-decoration-line: underline;
+  color: $background;
+  cursor: pointer;
+}
+.onblack {
+  color: $Foam;
+}
+.paragraph {
+  background-color: $Foam;
+  color: $background;
+  text-align: left;
+  font-size: medium;
+  font-family: $Value-text; 
+}
+.site-footer {
+  background-color: $background;
+} 
+.submitBtn { 
+   background-color: #59656F; 
+   color:snow;
+}
+.values {
+  color: $background;
+  text-align: center;
+  font-size: large;
+  font-family: $Value-text;
+}
+.w100 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.w50 {
+ width: 44.5%;
+ height: auto;
+ display: block;
+}
+
+//IDs
+ #contactCard {
+  background-color: #ffffff;
+  font-family: $Nav-text;
+}
+
+ #IGBar {
+  max-width: 100%; 
+  height: auto;
+  opacity: 1;
+ }
+
+ #IGBar2 {
+  max-width: 100%; 
+  height: auto;
+  opacity: 0.5;
+ }
+
+ #IGLink {
+  font-size: 4rem;
+ }
+ #IGOverlay {
+   display: none;
+ }
+ #IGOverlay2 {
+   display: block;
+ }
+
+ @media (min-width: 768px) {
+   .noDisplay {
+     display: none;
+   }
+ }
+
+
+
+
+
+
+

@@ -18,9 +18,9 @@ class FPButton extends Component {
         let filter = this.state.filter;
         return (
             <React.Fragment>
-                <Row className="justify-content-center py-4">
+                <Row className="justify-content-center py-sm-4">
                     <Col className="text-center">
-                        <a role="button" id="menuButton" href={this.props.items.href} 
+                        <a role="button" id={this.props.items.id} href={this.props.items.href} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             onMouseEnter={this.handleMouseEnter}
@@ -28,7 +28,7 @@ class FPButton extends Component {
                             <img className="img-fluid w-25" 
                                 src={this.props.items.src} 
                                 alt={this.props.items.alt}
-                                style={{filter: filter}}/>
+                                style={{filter: filter}} />
                         </a>
                     </Col>
                 </Row>

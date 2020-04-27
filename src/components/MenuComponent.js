@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { ToastCarousel } from './CarouselComponent';
 import FooterLarge from './FooterLarge';
 import { Container} from 'reactstrap';

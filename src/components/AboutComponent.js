@@ -14,7 +14,7 @@ function About(props) {
                 </Row>
 
                 <Row className="row-content align-items-center">
-                    <Col className="paragraph center-text">
+                    <Col className="paragraph text-center">
                         <h1>About Five Points</h1> 
                         <p><br /><br /><br />Something written by Melissa about local ingredients <br /><br /><br /></p>
                     </Col>
