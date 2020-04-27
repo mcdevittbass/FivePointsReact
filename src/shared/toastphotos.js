@@ -4,21 +4,21 @@ export const TOASTPHOTOS = [
         altText: "Pastries",
         className: 'w50 mx-auto',
         caption: '',
-        key: '1'
+        key: '0'
     },
     {
         src: "/img/deli-rye.png",
         altText: "Deli Rye Toast",
         className: 'w50 mx-auto',
         caption: '',
-        key: '2'
+        key: '1'
     },
     {
         src: "/img/mg_bread.png",
         altText: "Multigrain Bread",
         className: 'w50 mx-auto',
         caption: '',
-        key: '3'
+        key: '2'
     },
     {
         src: "img/power_toast.png",

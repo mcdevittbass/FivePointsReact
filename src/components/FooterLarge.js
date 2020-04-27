@@ -10,9 +10,8 @@ class FooterLarge extends Component {
             opacity: 1,
             displayIGHandle: false
         }
-        //this.handleMouseover = this.handleMouseover.bind(this);
     }
-
+    //change the opacity and add text on hover
     handleMouseEnter = (event) => {
         this.setState({opacity: 0.5});
         this.setState({displayIGHandle: true})

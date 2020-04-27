@@ -132,9 +132,6 @@ h5 {
   height: auto;
   display: block;
 }
-#menuButton, #farmButton {
-  border: none;
-  filter: 'invert(1)';
-}
+
 
 

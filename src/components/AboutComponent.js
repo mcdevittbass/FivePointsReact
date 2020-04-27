@@ -1,6 +1,8 @@
 import React from 'react';
 import FooterLarge from './FooterLarge';
 import { Container, Row, Col } from 'reactstrap';
+import FPButton from './FPButtons';
+import { BUTTONS } from '../shared/buttons';
 
 function About(props) {
     return (
@@ -18,13 +20,7 @@ function About(props) {
                     </Col>
                 </Row>
 
-                <Row className="row-content align-items-center my-4">
-                    <Col className="text-center">
-                        <a role="button" id="zineButton" href="#" target="_blank">
-                            <img className="img-fluid w-25" src="/img/FoundingButton.png" alt="founding story zine button"/>
-                        </a>
-                    </Col>
-                </Row>
+                <FPButton items={BUTTONS[2]} />
             </Container>
             <FooterLarge />
         </React.Fragment>
