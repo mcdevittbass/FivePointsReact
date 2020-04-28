@@ -34,7 +34,7 @@ class FooterLarge extends Component {
                 <Row className="p-2">
                     <Col>
                         <Card onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} className="my-auto bg-transparent d-none d-md-block">
-                            <CardImg style={{opacity: opacity }} src={baseUrl + 'img/FPIG.png'} alt="Five Points Instagram Bar" />
+                            <CardImg style={{opacity: opacity }} src={baseUrl + '/img/FPIG.png'} alt="Five Points Instagram Bar" />
                             <CardImgOverlay className="text-center my-auto" style={{display: display}}>
                                 <CardLink href="https://www.instagram.com/fivepointsbakery/" id="IGLink" target="_blank" rel="noopener noreferrer" className="paragraph text-white bg-transparent">@fivepointsbakery </CardLink>
                             </CardImgOverlay>
