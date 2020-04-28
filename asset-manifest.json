@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FivePointsReact/static/css/main.fafab323.chunk.css",
-    "main.js": "/FivePointsReact/static/js/main.822e96b9.chunk.js",
-    "main.js.map": "/FivePointsReact/static/js/main.822e96b9.chunk.js.map",
+    "main.js": "/FivePointsReact/static/js/main.96704a50.chunk.js",
+    "main.js.map": "/FivePointsReact/static/js/main.96704a50.chunk.js.map",
     "runtime-main.js": "/FivePointsReact/static/js/runtime-main.703e1dcf.js",
     "runtime-main.js.map": "/FivePointsReact/static/js/runtime-main.703e1dcf.js.map",
     "static/css/2.e248f5df.chunk.css": "/FivePointsReact/static/css/2.e248f5df.chunk.css",
     "static/js/2.9f203e63.chunk.js": "/FivePointsReact/static/js/2.9f203e63.chunk.js",
     "static/js/2.9f203e63.chunk.js.map": "/FivePointsReact/static/js/2.9f203e63.chunk.js.map",
     "index.html": "/FivePointsReact/index.html",
-    "precache-manifest.322bab2a02182431f6a9dc4e6ac11cc5.js": "/FivePointsReact/precache-manifest.322bab2a02182431f6a9dc4e6ac11cc5.js",
+    "precache-manifest.43df9ea207b52f2030b032508a6b3c60.js": "/FivePointsReact/precache-manifest.43df9ea207b52f2030b032508a6b3c60.js",
     "service-worker.js": "/FivePointsReact/service-worker.js",
     "static/css/2.e248f5df.chunk.css.map": "/FivePointsReact/static/css/2.e248f5df.chunk.css.map",
     "static/css/main.fafab323.chunk.css.map": "/FivePointsReact/static/css/main.fafab323.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.e248f5df.chunk.css",
     "static/js/2.9f203e63.chunk.js",
     "static/css/main.fafab323.chunk.css",
-    "static/js/main.822e96b9.chunk.js"
+    "static/js/main.96704a50.chunk.js"
   ]
 }
