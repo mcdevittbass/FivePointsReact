@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e572cf300d674a1c5a8dd6c0b953411",
+    "revision": "990deed26904d284c0d244f38d1aac87",
     "url": "/FivePointsReact/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FivePointsReact/static/css/2.e248f5df.chunk.css"
   },
   {
-    "revision": "369ed756557eea30c212",
+    "revision": "bfb6a10be58076a7ffeb",
     "url": "/FivePointsReact/static/css/main.fafab323.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FivePointsReact/static/js/2.9f203e63.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "369ed756557eea30c212",
-    "url": "/FivePointsReact/static/js/main.3201293b.chunk.js"
+    "revision": "bfb6a10be58076a7ffeb",
+    "url": "/FivePointsReact/static/js/main.822e96b9.chunk.js"
   },
   {
     "revision": "26b7676a3e66dc89355e",
