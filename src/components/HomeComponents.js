@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import FooterLarge from './FooterLarge';
+import { baseUrl } from '../shared/baseURL';
 
 //Photo and blurb rendered in HomePage Component along with FooterLarge and AddressCard
 export function AddressCard(props) {
@@ -23,7 +24,7 @@ export function HomePage(props) {
         <React.Fragment>
             <Container>
                 <Row className="p-3 row-content align-items-center">
-                <img className="img-fluid"  src="/img/gate.jpg" alt="Five Points outside" />
+                <img className="img-fluid"  src={baseUrl + "/img/gate.jpg"} alt="Five Points outside" />
             {/* https://www.google.com/search?q=five+points+bakery&tbm=isch&ved=2ahUKEwiMsYS8osXoAhWzcc0KHbFGAtEQ2-cCegQIABAA&oq=five+points+bakery&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzICCAAyAggAMgIIADIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDoECAAQHlCkxQRY68wEYOfRBGgAcAB4AYABuwKIAZYHkgEHMy4zLjAuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=EoKDXozgJ7PjtQaxjYmIDQ&bih=612&biw=1278#imgrc=uTtc7CqUtYB7wM  */}
                 </Row>
                 <Row className="paragraph p-3 row-content align-items-center values">

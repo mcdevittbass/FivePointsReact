@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavItem, Collapse, NavbarToggler } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { baseUrl } from '../shared/baseURL';
 
 //Navbar with toggler - still to do: figure out why menu is centered when toggled open instead of left aligned
 class Header extends Component {
@@ -24,7 +25,7 @@ class Header extends Component {
                 <Navbar className="navbar navbar-expand-md navbar-light relative">
                     <NavbarToggler onClick={this.toggleNav} />
                     <NavbarBrand className="d-block d-md-none" href="#">
-                        <img src="/img/FINAL_LOGO.png" width="150" height="150" alt="Five Points Logo" />
+                        <img src={baseUrl + "/img/FINAL_LOGO.png"} width="150" height="150" alt="Five Points Logo" />
                     </NavbarBrand>
                     <Collapse isOpen={this.state.isNavOpen} navbar className="justify-content-around">
                         <Nav navbar className="navbar-nav align-items-center nav-fill w-100">
@@ -38,7 +39,7 @@ class Header extends Component {
                                 <NavLink className="nav-link custom-color text-nowrap" to="/event_space">EVENT SPACE</NavLink>
                             </NavItem>
                             <NavbarBrand className="mx-auto d-none d-md-flex" href="#">
-                                <img src="/img/FINAL_LOGO.png" width="150" height="150" alt="Five Points Logo" />
+                                <img src={baseUrl + "/img/FINAL_LOGO.png"} width="150" height="150" alt="Five Points Logo" />
                             </NavbarBrand>
                             <NavItem className="flex-box">
                                 <NavLink className="nav-link custom-color" to="/menu">MENU</NavLink>

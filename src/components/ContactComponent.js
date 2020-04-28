@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardHeader, CardBody, Form, FormGroup, Input, Button } from 'reactstrap';
 import FooterSmall from './FooterSmall';
 import { AddressCard } from './HomeComponents';
+import { baseUrl } from '../shared/baseURL';
 
 
 //created in ContactForm component: contact controlled form
@@ -31,7 +32,7 @@ class ContactForm extends Component {
     render() {
         return (
             <React.Fragment>
-                <Container className="container-fluid mx-auto m-0 cinnroll">
+                <Container className="container-fluid mx-auto m-0 cinnroll" style={{backgroundImage: `${baseUrl} + /img/cinnroll.jpg`}}>
                     <Row className="p-4">
                         <Col className="col-md-8 mx-auto">
                             <Card id="contactCard">
@@ -44,7 +45,7 @@ class ContactForm extends Component {
                                     <Form onSubmit={this.handleSubmit}>
                                         <FormGroup className="row align-self-center">
                                             <Col className="mx-auto">
-                                                <Input type="text" class="form-control" id="name" name="name" placeholder="Name" 
+                                                <Input type="text" className="form-control" id="name" name="name" placeholder="Name" 
                                                     value={this.state.name} onChange={this.handleInputChange}/>
                                             </Col>
                                         </FormGroup>
@@ -61,7 +62,7 @@ class ContactForm extends Component {
                                             </Col>
                                         </FormGroup>
                                         <FormGroup className="row">
-                                            <Col className="col-md-10 offset-10">
+                                            <Col className="col-md-10 offset-sm-10">
                                                 <Button type="submit" className="btn submitBtn" >Send</Button>
                                             </Col>
                                         </FormGroup>
