@@ -16,14 +16,14 @@ export const EVENTPHOTOS = [
         key: '1'
     },
     {
-        src: baseUrl + "img/PIC_5727.jpg",
+        src: baseUrl + "/img/PIC_5727.jpg",
         altText: "Event Space angle 3",
         className: 'w50 mx-auto',
         caption: '',
         key: '2'
     },
     {
-        src: baseUrl + "img/PIC_5739.jpeg",
+        src: baseUrl + "/img/PIC_5739.jpeg",
         altText: "Event Space angle 4",
         className: 'w100',
         caption: '',

@@ -2,7 +2,7 @@ import { baseUrl } from './baseURL';
 
 export const TOASTPHOTOS = [
     {
-        src: baseUrl + "img/pastries.png",
+        src: baseUrl + "/img/pastries.png",
         altText: "Pastries",
         className: 'w50 mx-auto',
         caption: '',
@@ -23,7 +23,7 @@ export const TOASTPHOTOS = [
         key: '2'
     },
     {
-        src: baseUrl + "img/power_toast.png",
+        src: baseUrl + "/img/power_toast.png",
         altText: "Power Toast",
         className: 'w50 mx-auto',
         caption: '',
