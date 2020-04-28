@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import FooterLarge from './FooterLarge';
 
+//Photo and blurb rendered in HomePage Component along with FooterLarge and AddressCard
 export function AddressCard(props) {
     return (
         <Row className="p-3 row-content align-items-center">

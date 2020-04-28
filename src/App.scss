@@ -109,26 +109,8 @@ h5 {
   font-family: $Nav-text;
 }
 
- #IGBar {
-  max-width: 100%; 
-  height: auto;
-  opacity: 1;
- }
-
- #IGBar2 {
-  max-width: 100%; 
-  height: auto;
-  opacity: 0.5;
- }
-
  #IGLink {
   font-size: 4rem;
- }
- #IGOverlay {
-   display: none;
- }
- #IGOverlay2 {
-   display: block;
  }
 
  @media (min-width: 768px) {

@@ -4,6 +4,9 @@ import FooterSmall from './FooterSmall';
 import { Container, Row, Col, Card, CardHeader, CardBody, Table } from 'reactstrap';
 import EventModal from './EventModal';
 
+//Scroll down for EventCard child components
+//Rendered in EventSpace: Text with event rental info
+//Other components rendered in EventSpace: EventModal, EventCard1, EventCard2, EventCarousel, FooterSmall
 function EventSpace(props) {
     return (
         <React.Fragment>

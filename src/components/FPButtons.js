@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Row, Col} from 'reactstrap';
 
+//renders buttons on Menu page and About page using buttons.js file for data
+//buttons invert black-white when hovered over
 class FPButton extends Component {
     constructor(props) {
         super(props);

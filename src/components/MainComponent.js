@@ -9,6 +9,7 @@ import { EventSpace } from './EventSpaceComponent';
 import Menu from './MenuComponent';
 import Press from './PressComponent';
 
+//Route all pages
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -19,18 +20,11 @@ class Main extends Component {
     }
 
     render() {
-
-        const Home = () => {
-            return (
-                <HomePage />
-            );
-        }
-
         return (
             <React.Fragment>
                 <Header />
                 <Switch>
-                    <Route path='/home' component={Home} />
+                    <Route path='/home' render={() => <HomePage />} />
                     <Route path='/about' render={() => <About />} />
                     <Route path='/contact' render={() => <ContactForm />} />
                     <Route path='/event_space' render={() => <EventSpace />} />

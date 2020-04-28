@@ -3,7 +3,8 @@ import FooterLarge from './FooterLarge';
 import { Container, Row, Col } from 'reactstrap';
 import FPButton from './FPButtons';
 import { BUTTONS } from '../shared/buttons';
-
+//Rendered in the About component: image of Kevin and Melissa and blurb from Melissa
+//Other components rendered inside About: Button created in FPButtons.js, FooterLarge
 function About(props) {
     return (
         <React.Fragment>

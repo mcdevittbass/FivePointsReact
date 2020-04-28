@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavItem, Collapse, NavbarToggler } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
+//Navbar with toggler - still to do: figure out why menu is centered when toggled open instead of left aligned
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -9,10 +10,9 @@ class Header extends Component {
         this.state = {
             isNavOpen: false
         }
-        
-        this.toggleNav = this.toggleNav.bind(this);
     }
-    toggleNav() {
+    
+    toggleNav = () => {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });

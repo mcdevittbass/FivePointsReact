@@ -2,6 +2,7 @@ import React from 'react';
 import FooterLarge from './FooterLarge';
 import { Container, Row, Col } from 'reactstrap';
 
+//No content yet
 function Press(props) {
     return (
         <React.Fragment>

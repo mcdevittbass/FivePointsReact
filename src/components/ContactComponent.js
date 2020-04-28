@@ -3,6 +3,9 @@ import { Container, Row, Col, Card, CardHeader, CardBody, Form, FormGroup, Input
 import FooterSmall from './FooterSmall';
 import { AddressCard } from './HomeComponents';
 
+
+//created in ContactForm component: contact controlled form
+//Other components rendered in it: AddressCard from HomeComponent, FooterSmall
 class ContactForm extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +22,8 @@ class ContactForm extends Component {
 
         this.setState({[valueType]: event.target.value});
     }
-
+    
+    //later on, this information will go somewhere!
     handleSubmit = (event) => {
         alert('The information you entered is ' + JSON.stringify(this.state));
     }

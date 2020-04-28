@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Modal, Col, Button, ModalHeader, ModalBody, FormGroup, Label, Input, Form } from 'reactstrap';
 
-
+//This is only the modal - controlled form related to booking events
 class EventModal extends Component {
     constructor(props) {
         super(props);
@@ -33,6 +33,7 @@ class EventModal extends Component {
           [name]: value
         });
     }
+    //later on, this information will go somewhere!
     handleSubmit = (event) => {
         console.log('Current state is: ' + JSON.stringify(this.state));
         alert('Current state is: ' + JSON.stringify(this.state));
