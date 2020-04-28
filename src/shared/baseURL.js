@@ -1,1 +1,1 @@
-export const baseUrl = 'https://mcdevittbass.github.io';
+export const baseUrl = '/FivePointsReact';
