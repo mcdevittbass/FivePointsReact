@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import FooterLarge from './FooterLarge';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Modal, ModalBody, ModalHeader } from 'reactstrap';
 import FPButton from './FPButtons';
 import { BUTTONS } from '../shared/buttons';
 import { baseUrl } from '../shared/baseURL';
@@ -22,11 +22,40 @@ function About(props) {
                     </Col>
                 </Row>
 
-                <FPButton items={BUTTONS[2]} />
+                <ZineModal />
             </Container>
             <FooterLarge />
         </React.Fragment>
     );
+}
+
+class ZineModal extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isModalOpen: false
+        }
+    }
+    toggleModal = () => {
+        this.setState(
+            {isModalOpen: !this.state.isModalOpen}
+        );
+    }
+    render () {
+        return (
+            <React.Fragment>    
+                <Col className='text-center'>
+                    <FPButton items={BUTTONS[2]} onClick={this.toggleModal}/>     
+                </Col>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} size={"sm"}>
+                    <ModalHeader toggle={this.toggleModal}>Five Points Digital Zine</ModalHeader>
+                    <ModalBody>
+                        Coming soon...
+                    </ModalBody>
+                </Modal>
+            </React.Fragment>
+        );
+    }
 }
 
 export default About;

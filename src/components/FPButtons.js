@@ -26,7 +26,9 @@ class FPButton extends Component {
                             target="_blank" 
                             rel="noopener noreferrer"
                             onMouseEnter={this.handleMouseEnter}
-                            onMouseLeave={this.handleMouseLeave}>
+                            onMouseLeave={this.handleMouseLeave}
+                            onClick={this.props.onClick}
+                            style={{cursor: 'pointer'}}>
                             <img className="img-fluid w-25" 
                                 src={this.props.items.src} 
                                 alt={this.props.items.alt}

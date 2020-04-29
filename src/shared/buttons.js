@@ -20,7 +20,6 @@ export const BUTTONS = [
         src: baseUrl + '/img/FoundingButton.png',
         alt: 'founding story zine button',
         id: 'zineButton',
-        href: '',
         key: '2'
     }
 ]
