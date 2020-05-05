@@ -33,7 +33,7 @@ class ContactForm extends Component {
         return (
             <React.Fragment>
                 <Container className="container-fluid mx-auto m-0 cinnroll" style={{backgroundImage: `url(${baseUrl}/img/cinnroll.jpg)`}}>
-                    <Row className="p-4">
+                    <Row className="py-4">
                         <Col className="col-md-8 mx-auto">
                             <Card id="contactCard">
                                 <CardHeader>
