@@ -112,6 +112,18 @@ h5 {
   font-size: 4rem;
  }
 
+ #basicLink {
+  text-decoration-line: none;
+  font-weight: bold;
+  color: $Foam;
+  cursor: pointer;
+ }
+ #basicLink:hover {
+  text-decoration-line: underline;
+  color: $Foam;
+  cursor: pointer;
+ }
+
  @media (min-width: 768px) {
    .noDisplay {
      display: none;

@@ -14,7 +14,10 @@ export function AddressCard(props) {
                 Buffalo, NY 14213<br />
                 716.884.8888 <br /><br /> 
                 <u>HOURS</u> <br />
-                7am to 6pm Every Day</p>
+                8:30am to 3:30pm Every Day <br />
+                We have our full cafe menu available and socially distanced outdoor seating for 100+
+                on our large grounds. We also have our whole grain breads, pastries, and grocery staples.
+                Check our offerings on our <a href='#/menu' id='basicLink'>menu page</a> and call in your order at 716-884-8888.</p>
             </Col>
         </Row>
     );
